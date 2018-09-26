@@ -6,8 +6,7 @@ before_script:
 script: gulp pack
 deploy:
   provider: releases
-  api_key:
-    secure: fleSjETSZcWO0kuWsMGcExIUrkqYwSZLGoaDKL+5AEb/YGa2rVNF0fub9H3Tqt8Ho36y9XfoqqIvgpc6x12TV30h5+448hIb/6bESgDCM8wEsHaSamEGQr2MMS/iGnkNhUnb8fmd+uWZ13Xum9ZLgA6KnY14w8MyDub6O7H23IzTMjCz1sGcG+e2RRyz/xKqaqkOUClRrjyqnpW9SXReGLEfl2dG8k89ja0NKcPmRmPI1fp4rELSshyb7rZjmYWIWF+ddj8FjZHaAQlu4AXxTV1mGCVw9TvtHrBWZZ8PN61FY0ha7Bh55MuRFIQ9HzWccHAJm7SpbOKRiCfUZqqeKErHdgL854H2hI4TQoD6G9NlFqeQ6U+m6cmUxmGAxnwHB4EQgr0DXBCxEcMVZ259HM14qB2R5rYuQZ8VKaLcvlZNp0UqduoC+MUWtCNsfX2Sx9h/fZWOoplXSQER0D7rrkzB/B6JPtO8pzBWZrhakdcFE7+GbJZ8NVu7Om64LXToBvw0qsP51eFsvBZXWYOzRCZ1WV4F8OmLTs0+nD3hPFCMH4jogcFL7HcfaUv3xSoW+WdipxzxotbIKm0ainzDPYgGwFonJuAXH8ejw5GV+/aSqFxTuQYXtKLCtMNa9nIqaWSAt+GlamGIpjW5n4PVUByDaniRm5piiFzThkzQFUc=
+  api_key: $GITHUB_API_KEY
   file:
     - build/ui-bundle.zip
   skip_cleanup: true
